@@ -72,8 +72,8 @@ def get_data():
         speedlabel.place(x=22,y=270)
         gustlabel = CTkLabel(master=frame, text=f"Gust: {gust} m/s" )
         gustlabel.place(x=22,y=290)
-        weatherlabel = CTkLabel(master=frame, text=f"The weather in {city} is {weather} " )
-        weatherlabel.place(x=20,y=320)
+        weatherlabel = CTkLabel(master=frame, text=f"The weather in {city} is \n{weather} " )
+        weatherlabel.place(x=40,y=340)
     except:
         errorlabel = CTkLabel(master=frame, text=f"An error occured,\n please enter a valid location", fg_color="red")
         errorlabel.place(x=40,y=400)
